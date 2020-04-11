@@ -1,0 +1,14 @@
+'''
+Created on Apr 10, 2020
+
+@author: zhalat
+'''
+import unittest
+
+
+class Base_unit_test(unittest.TestCase):
+
+
+    def testName(self):
+        pass
+

@@ -1,0 +1,5 @@
+from utils.log import get_logger
+from utils.fileLog import Logs
+
+if __name__ == '__main__':
+    print("test ok")

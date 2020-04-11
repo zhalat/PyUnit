@@ -1,0 +1,6 @@
+MODULES_MANAGER_V2
+Tests.base_unit_test|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/Tests/base_unit_test.py
+Tests.unit_test_a|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/Tests/unit_test_a.py
+Tests.unit_test_b|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/Tests/unit_test_b.py
+Tests.unit_test_c|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/Tests/unit_test_c.py
+main|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/main.py

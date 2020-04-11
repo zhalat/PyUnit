@@ -1,0 +1,47 @@
+-- VERSION_5
+-- START DISKCACHE_2
+/home/zhalat/Desktop/PyUnit_skeleton/.metadata/.plugins/org.eclipse.core.resources/.projects/unittest_py/com.python.pydev.analysis/v2_indexcache
+utils.log|1586588364127911000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/utils/log.py
+TestMainModule.UnitTestBase|1586588347235877000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/TestMainModule/UnitTestBase.py
+utils.__init__|1580463694000000000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/utils/__init__.py
+Tests.TestSuite_c|1586554053305418000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/Tests/TestSuite_c.py
+Tests.TestSuite_b|1586553520544860000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/Tests/TestSuite_b.py
+setup|1586590677829966000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/setup.py
+__init__|1580463694000000000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/__init__.py
+utils.fileLog|1572872207000000000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/utils/fileLog.py
+Tests.TestSuite_a|1586553515336859000|/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/Tests/TestSuite_a.py
+-- END DISKCACHE
+-- START DICTIONARY
+11
+6=utils.log
+3=/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/setup.py
+2=TestMainModule.UnitTestBase
+7=/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/utils/fileLog.py
+4=setup
+11=Logs.__init__
+10=Base_unit_test
+5=/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/utils/log.py
+9=Logs
+8=utils.fileLog
+1=/home/zhalat/Desktop/PyUnit_skeleton/unittest_py/TestMainModule/UnitTestBase.py
+-- END DICTIONARY
+-- START TREE 1
+9
+bas|1|Base_unit_test!1^9#7*17@
+dir|1|dir_path!3^11#1*35@
+ena|1|enable_file_logging!5^39#5*50@
+fil|0|
+get|1|get_logger!5^9#5*50@
+log|3|Logs!7^1#7*65@logger!5^6#1*51@log_call!5^32#5*50@
+lon|1|long_description!3^9#1*35@
+req|1|required!3^14#5*35@
+tes|0|
+-- END TREE
+-- START TREE 2
+5
+__c|1|__clean_log_file!9&7^10#9*66@
+__i|2|__init__!9&7^2#9*66@__init__!10&1^10#9*18@
+__l|1|__log_file_name!11&7^3#9*67@
+tes|0|
+wri|1|write!9&7^6#9*66@
+-- END TREE
