@@ -3,7 +3,7 @@ from utils.log import get_logger
 from utils.fileLog import Logs 
 
 log_console = get_logger()
-log_file = Logs("TestRunnerLog.txt")
+log_file = Logs("TestRunner_log.txt")
 
 if __name__ == '__main__':
     log_console.info("TestRunner start")
