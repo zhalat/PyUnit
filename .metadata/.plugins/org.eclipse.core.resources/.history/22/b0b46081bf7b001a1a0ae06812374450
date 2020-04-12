@@ -1,6 +1,0 @@
-from unittest import TestLoader, TestSuite
-
-
-
-if __name__ == '__main__':
-    print("test")

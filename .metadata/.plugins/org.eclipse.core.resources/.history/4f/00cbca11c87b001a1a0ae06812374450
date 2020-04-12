@@ -1,9 +1,0 @@
-from utils.log import get_logger
-from utils.fileLog import Logs
-
-
-log = get_logger()
-
-if __name__ == '__main__':
-    log.info("Test runner starts")
-    #print("test ok")

@@ -1,9 +1,0 @@
-from utils.log import get_logger
-from utils.fileLog import Logs
-
-
-logger = get_logger()
-
-if __name__ == '__main__':
-    log.info("Enable host(stm) validator mode")
-    #print("test ok")

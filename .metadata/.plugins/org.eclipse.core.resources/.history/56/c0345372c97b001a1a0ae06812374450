@@ -1,8 +1,0 @@
-import os
-from utils.log import get_logger
-from utils.fileLog import Logs 
-
-
-log_console = get_logger()
-
-if __name__ == '__main__':
