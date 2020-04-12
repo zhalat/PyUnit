@@ -4,6 +4,7 @@ from utils.fileLog import Logs
 import unittest
 from unittest import TestLoader, TestSuite
 import xmlrunner
+from TestMainModule.UnitTestBase import TestSkipperList
 from argparse import ArgumentParser
   
 log_console = get_logger()
@@ -33,7 +34,10 @@ if __name__ == '__main__':
     testcase = parsed_args.testcase
     log_console.info("testsuite:{}".format(testsuite))
     log_console.info("testcase:{}".format(testcase))
-      
+    TestSkipperList.add(testcase[-1])
+    TestSkipperList.print_list()
+    print(TestSkipperList.is_on_the_list(testcase[-1]))
+
       
     #load only those tests which mets user requirements
     test_loader = TestLoader()

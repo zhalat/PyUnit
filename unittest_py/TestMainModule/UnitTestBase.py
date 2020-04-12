@@ -5,6 +5,26 @@ Created on Apr 10, 2020
 '''
 import unittest
 
+class TestSkipperList:
+    skip_test_name_list = []
+    
+    @staticmethod
+    def add(testCaseName):
+        TestSkipperList.skip_test_name_list.append(testCaseName)
+
+    @staticmethod
+    def clean_skip_list(self):
+        TestSkipperList.skip_test_name_list.clear()
+        
+    @staticmethod
+    def is_on_the_list(testCaseName) -> bool: 
+        retval = testCaseName in TestSkipperList.skip_test_name_list
+        return retval
+    
+    @staticmethod
+    def print_list():
+        print(TestSkipperList.skip_test_name_list)
+
 def your_skip_decorator(flag: bool):
     def deco(f):
         def wrapper(self, *args, **kwargs):
