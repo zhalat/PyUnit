@@ -12,6 +12,5 @@ class TestB(Base_unit_test):
             
     @unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
     def test_windows_support(self):
-        # windows specific testing code
         self.fail("shouldn't happen")
         pass
