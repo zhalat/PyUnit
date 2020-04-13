@@ -26,7 +26,7 @@ if __name__ == '__main__':
     testcase = parsed_args.testcase
     log_console.info("testsuite:{}".format(testsuite))
     log_console.info("testcase:{}".format(testcase))
-
+    
     for el in testsuite:
         TestList.add(test_suite=el)
         

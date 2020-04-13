@@ -80,4 +80,12 @@ def your_skip_decorator():
 class Base_unit_test(unittest.TestCase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        
+    def setUp(self):
+        get_logger().info("setUp")
+        #your setup code
+        
+    def tearDown(self):
+        get_logger().info("tearDown")
+        #your teardown code
 

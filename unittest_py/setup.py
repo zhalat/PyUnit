@@ -16,7 +16,7 @@ with open(os.path.join(dir_path, 'requirements.txt')) as f:
 setup(
     name='PyUnit_skeleton',
     version='1.0.0',
-    python_requires='>=3.7.0',
+    python_requires='>=3.6.0',
     description='Base test skeleton for your PyUnit test',
     long_description=long_description,
     license='open soruce',
