@@ -36,16 +36,16 @@ Following diagram show tests structure.
 ```
 unittest_py/Tests
                 └── TestA.py
-                	├──test_upper
-                	└──test_isupper
+                    ├──test_upper
+                    └──test_isupper
                 └── TestB.py
-                	├──test_sum
-					├──test_diff
-                	└──test_windows_support
+                    ├──test_sum
+                    ├──test_diff
+                    └──test_windows_support
                 └── TestC.py
-                	├──test_simple_test1
-					├──test_simple_test2
-                	└──test_simple_test3
+                    ├──test_simple_test1
+                    ├──test_simple_test2
+                    └──test_simple_test3
 ```
 TestA, TestB, TestC are test suite.  Each of them has its own test cases.
 The framework do no require all parameters.  By default all test suites and all test cases will be run. 
