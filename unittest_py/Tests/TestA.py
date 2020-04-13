@@ -1,6 +1,6 @@
-from TestMainModule.UnitTestBase import Base_unit_test, your_skip_decorator
+from TestMainModule.UnitTestBase import UnitTestBase, your_skip_decorator
 
-class TestA(Base_unit_test):
+class TestA(UnitTestBase):
     @your_skip_decorator()
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')

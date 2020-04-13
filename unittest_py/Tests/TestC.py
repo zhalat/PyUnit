@@ -1,6 +1,6 @@
-from TestMainModule.UnitTestBase import Base_unit_test, your_skip_decorator
+from TestMainModule.UnitTestBase import UnitTestBase, your_skip_decorator
 
-class TestC(Base_unit_test):
+class TestC(UnitTestBase):
     @your_skip_decorator()
     def test_simple_test1(self):
         self.assertFalse(False, False)
