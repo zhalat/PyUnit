@@ -9,7 +9,7 @@ from argparse import ArgumentParser
   
 log_console = get_logger()
 log_file = Logs("TestRunner_log.txt")
-  
+
 
 if __name__ == '__main__':
     log_console.info("TestRunner start")
@@ -34,13 +34,16 @@ if __name__ == '__main__':
         TestList.add(test_case=el)
        
     #3. show tests to be run 
-    TestList.print_list()
+    TestList.validate_list()
     
-
+    #4. run test 
     test_loader = TestLoader()
     suite_list = [test_loader.discover('Tests', pattern='{}.py'.format(x)) for x in testsuite]
-    #suite_list.skipTest("test_simple_test2")
     test_loader = TestLoader()
     suite = TestSuite(suite_list)
-    #unittest.TextTestRunner(verbosity=2).run(suite) #without generating .xml output
     xmlrunner.XMLTestRunner(output='report.xml', verbosity=2).run(suite)
+    #without generating .xml output
+    #unittest.TextTestRunner(verbosity=2).run(suite) 
+    
+    log_console.info("TestRunner end")
+    log_file.write("TestRunner end")

@@ -45,18 +45,24 @@ class TestList:
         return isTestSuiteOk and isTestCaseOk
     
     @staticmethod
-    def print_list():
+    def validate_list():
+        if 0==len(TestList.test_suite_name_list) and len(TestList.test_case_name_list)>0:
+            raise(TestListException("ERROR", "Test suite must be provided"))
+        #print test list
         x = PrettyTable()
         x.field_names = ["Test Suite", "Test Case"]
-        for el in  TestList.test_suite_name_list:
-            x.add_row([el,"*"])
-            
-        for el in  TestList.test_case_name_list:
-            x.add_row(["*",el])
-        
-        if len(TestList.test_suite_name_list)==0 and len(TestList.test_case_name_list)==0:
+        if 0==len(TestList.test_suite_name_list) and 0==len(TestList.test_case_name_list):
             x.add_row(["*","*"])
-        
+            
+        for i in range(0,len(TestList.test_suite_name_list)+len(TestList.test_case_name_list)):
+            if len(TestList.test_suite_name_list)>0 and 0 == len(TestList.test_case_name_list) and i==0:
+                x.add_row([TestList.test_suite_name_list[i],"*"])
+            elif i < len(TestList.test_suite_name_list) and i < len(TestList.test_case_name_list):
+                x.add_row([TestList.test_suite_name_list[i],TestList.test_case_name_list[i]])
+            elif i < len(TestList.test_suite_name_list):
+                x.add_row([TestList.test_suite_name_list[i],""])
+            elif i < len(TestList.test_case_name_list):
+                x.add_row(["",TestList.test_case_name_list[i]])
         print(x)
         
 
@@ -69,6 +75,7 @@ def your_skip_decorator():
                 f(self, *args, **kwargs)
         return wrapper
     return deco
+
 
 class Base_unit_test(unittest.TestCase):
     def __init__(self, *args, **kwargs):

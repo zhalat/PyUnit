@@ -12,7 +12,6 @@ class TestB(Base_unit_test):
         self.assertTrue(4, 4)
         self.assertFalse(False, True)
             
-#     @your_skip_decorator()
-#     def test_windows_support(self):
-#         self.fail("shouldn't happen")
-#         pass
+    @unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
+    def test_windows_support(self):
+        self.fail("shouldn't happen")
