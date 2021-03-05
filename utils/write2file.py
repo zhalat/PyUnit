@@ -1,4 +1,4 @@
-class Logs:
+class Write2File:
     def __init__(self, log_file_name: str = 'log.txt'):
         self.__log_file_name = log_file_name
         self.__clean_log_file()

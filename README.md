@@ -13,8 +13,6 @@ Framework works on the base of classical scheme:
 - setUp()  - method runs before each test case. 
 - tearDown() - method runs after each test case
 
-It would be best convenient  for you to just playing around whit code as it is for a while before you made a decision to make changes
-
 ### Install required packages
 
 ```
@@ -31,7 +29,7 @@ You should have python 3 installed
 
 ### How to run tests?
 
-Following diagram show tests structure.
+Following diagram shows an exemplary tests structure.
 
 ```
 unittest_py/Tests
@@ -40,8 +38,7 @@ unittest_py/Tests
                     └──test_isupper
                 └── TestB.py
                     ├──test_sum
-                    ├──test_diff
-                    └──test_windows_support
+                    └──test_windows_support  
                 └── TestC.py
                     ├──test_simple_test1
                     ├──test_simple_test2
@@ -78,7 +75,7 @@ You can decide which test should be run. See some example:
   >   test_diff (Tests.TestB.TestB) ... ok (0.000s)
   >   test_sum (Tests.TestB.TestB) ... ok (0.000s)
 
-- I want to run suites: 
+- I want to run suite but decide which test case: 
   *TestA* with test case [*test_isupper*]
   *TestB* with [*test_simple_test1*, *test_simple_test3*]
 
